@@ -1,4 +1,7 @@
 package se.lexicon.springbootlecture2.Repository;
 
-public interface AddressRepository {
+import org.springframework.data.repository.CrudRepository;
+import se.lexicon.springbootlecture2.entity.Address;
+
+public interface AddressRepository extends CrudRepository<Address, Long> {
 }
